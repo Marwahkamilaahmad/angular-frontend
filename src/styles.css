@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+.signup-page {
+  background-color: #e8ebf6; /* Light blue background color */
+  min-height: 100vh; /* Ensure it covers the full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-page {
+  background-color: #e8ebf6; /* Light blue background color */
+  min-height: 100vh; /* Ensure it covers the full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.create-page {
+  justify-content: center;
+  align-items: center;
+}
+
+.update-page {
+  justify-content: center;
+  align-items: center;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

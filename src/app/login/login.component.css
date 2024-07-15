@@ -1,0 +1,25 @@
+.card{
+  border: none;
+  width: 500px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(120deg, #a1c4fd, #c2e9fb, #79a2fc, #ab1588);
+
+}
+
+.form-control {
+  background: rgba(255, 255, 255, 0.6); /* Transparent background */
+  border: 1px solid #ddd; /* Light border */
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.form-control:focus {
+  background: rgba(255, 255, 255, 0.9); /* Slightly less transparent when focused */
+  border-color: #007bff; /* Border color when focused */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Box shadow when focused */
+}

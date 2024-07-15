@@ -1,0 +1,25 @@
+.card{
+  border: none;
+  padding: 50px;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #c2e9fb;
+}
+
+.form-control {
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.form-control:focus {
+  background: rgba(255, 255, 255, 0.9);
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}

@@ -1,0 +1,34 @@
+<div class="mat-elevation-z table-container">
+  <table mat-table [dataSource]="dataSource" class="mat-table">
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef> NIM </th>
+      <td mat-cell *matCellDef="let student"> {{ student.id }} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="namaLengkap">
+      <th mat-header-cell *matHeaderCellDef> Nama Lengkap </th>
+      <td mat-cell *matCellDef="let student"> {{ student.namaLengkap }} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="usia">
+      <th mat-header-cell *matHeaderCellDef> Usia </th>
+      <td mat-cell *matCellDef="let student"> {{ student.usia }} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="actions">
+      <th mat-header-cell *matHeaderCellDef class="text-right">
+        <a href="/create" class="btn btn-warning"><fa-icon [icon]="faPlus"></fa-icon></a>
+      </th>
+      <td mat-cell *matCellDef="let student" class="text-right">
+        <a mat-button class="btn btn-dark text-white btn-sm m-2" color="primary" (click)="editStudent(student)">Edit</a>
+        <a mat-button color="warn" class="btn btn-danger btn-sm" (click)="deleteStudent(student)">Hapus</a>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div>
+
+
+

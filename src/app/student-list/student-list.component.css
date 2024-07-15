@@ -1,0 +1,17 @@
+.table-container {
+  width: 98%;
+  margin: auto;
+  margin-top: 10vh;
+}
+
+.mat-header-cell, .mat-cell {
+  padding: 20px;
+}
+
+.mat-table {
+  background-color: rgb(221, 225, 230);
+}
+
+.text-right {
+  text-align: right;
+}
